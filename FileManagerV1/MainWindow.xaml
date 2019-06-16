@@ -46,7 +46,8 @@
             </Grid.ColumnDefinitions>
 
             <!--Side Menu-->
-            <Border Grid.Column="0" Background="{StaticResource BackgroundLightMainBursh}"/>
+            <local:SideMenuControl>
+            </local:SideMenuControl>
             
             <!--Drop Shadow-->
             <Border Grid.Column="1" Width="1" BorderThickness="0.5">
