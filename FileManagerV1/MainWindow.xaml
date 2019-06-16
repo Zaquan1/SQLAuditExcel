@@ -1,0 +1,63 @@
+﻿<Window x:Class="FileManagerV1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FileManagerV1"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        x:Name="AppWindow"
+        MinWidth="{Binding WIndowMinimumWidth}"
+        MinHeight="{Binding WindowMinimumHeight}"
+        Style="{StaticResource MainWindow}"
+        Title="MainWindow" Height="450" Width="800">
+
+    <WindowChrome.WindowChrome>
+        <WindowChrome 
+            ResizeBorderThickness="{Binding ResizeBorderThickness}"
+            CaptionHeight="{Binding TitleHeight}"
+            GlassFrameThickness="0"
+            CornerRadius="0"
+            />
+    </WindowChrome.WindowChrome>
+    <Grid Background="{StaticResource BackgroundMainBursh}">
+        <Grid.RowDefinitions>
+            <!--Search bar, back button ect.-->
+            <RowDefinition Height="Auto"/>
+            <!--Other content-->
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <!--Search bar-->
+        <Grid Grid.Column="0">
+            
+        </Grid> 
+        
+        <!--Other Content-->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <!--Side Menu-->
+                <ColumnDefinition Width="200"/>
+                <!--Drop Shadow-->
+                <ColumnDefinition Width="1"/>
+                <!--Main Content-->
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Side Menu-->
+            <Border Grid.Column="0" Background="{StaticResource BackgroundLightMainBursh}"/>
+            
+            <!--Drop Shadow-->
+            <Border Grid.Column="1" Width="1" BorderThickness="0.5">
+                <Border.BorderBrush>
+                    <LinearGradientBrush StartPoint="0, 0" EndPoint="0, 1">
+                        <GradientStop Color="{StaticResource BackgroundMain}" Offset="0.0"/>
+                        <GradientStop Color="{StaticResource White}" Offset="0.5"/>
+                        <GradientStop Color="{StaticResource BackgroundMain}" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Border.BorderBrush>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

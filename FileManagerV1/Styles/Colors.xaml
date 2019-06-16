@@ -1,0 +1,27 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:FileManagerV1.Styles">
+
+    <Color x:Key="BackgroundMain">#1C1C1C</Color>
+    <SolidColorBrush x:Key="BackgroundMainBursh" Color="{StaticResource BackgroundMain}"/>
+
+    <Color x:Key="BackgroundLightMain">#2A2B2A</Color>
+    <SolidColorBrush x:Key="BackgroundLightMainBursh" Color="{StaticResource BackgroundLightMain}"/>
+
+    <Color x:Key="ForegroundMain">#CFCFCF</Color>
+    <SolidColorBrush x:Key="ForegroundMainBrush" Color="{StaticResource ForegroundMain}"/>
+
+    
+    <!--button's color-->
+    <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="{StaticResource BackgroundLightMain}"/>
+    <SolidColorBrush x:Key="ButtonForegroundBrush" Color="{StaticResource ForegroundMain}"/>
+
+    <Color x:Key="ButtonBackgroundHover">#373737</Color>
+    <SolidColorBrush x:Key="ButtonBackgroundHoverBrush" Color="{StaticResource ButtonBackgroundHover}"/>
+
+    <Color x:Key="ButtonBackgroundClick">#525352</Color>
+    <SolidColorBrush x:Key="ButtonBackgroundClickBrush" Color="{StaticResource ButtonBackgroundClick}"/>
+
+    <Color x:Key="White">#F7F7F7</Color>
+    <SolidColorBrush x:Key="WhiteBrush" Color="{StaticResource White}"/>
+</ResourceDictionary>
