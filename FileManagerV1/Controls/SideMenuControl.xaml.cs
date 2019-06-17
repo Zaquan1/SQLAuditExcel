@@ -59,6 +59,7 @@ namespace FileManagerV1
 
             var fullPath = (string)item.Tag;
 
+            #region Get Folder Directories
             var directories = new List<string>();
             try
             {
@@ -82,6 +83,30 @@ namespace FileManagerV1
 
                 item.Items.Add(subItem);
             });
+            #endregion
+
+            #region Get File Directories
+            var files = new List<string>();
+            try
+            {
+                var fs = Directory.GetFiles(fullPath);
+
+                if (fs.Length > 0)
+                    files.AddRange(fs);
+
+            }
+            catch { }
+            files.ForEach(filePath =>
+            {
+                var subItem = new TreeViewItem()
+                {
+                    Header = GetFileFolderName(filePath),
+                    Tag = filePath
+                };
+                
+                item.Items.Add(subItem);
+            });
+            #endregion
         }
         #endregion
 

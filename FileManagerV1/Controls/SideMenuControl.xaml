@@ -18,7 +18,7 @@
                             <Setter.Value>
                                 <DataTemplate>
                                     <StackPanel Orientation="Horizontal">
-                                        <Image Width="20" Height="20"  Source="/Images/Directory/FolderIcon.png"/>
+                                        <Image Width="20" Height="20"  Source="{Binding}"/>
                                         <TextBlock VerticalAlignment="Center" Text="{Binding}"/>
                                     </StackPanel>
                                 </DataTemplate>
