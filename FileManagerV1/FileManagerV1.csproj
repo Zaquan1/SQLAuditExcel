@@ -64,6 +64,7 @@
     <Compile Include="Controls\SideMenuControl.xaml.cs">
       <DependentUpon>SideMenuControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SideMenuDir\HeaderToImageConverter.cs" />
     <Compile Include="VIewModel\Base\BaseViewModel.cs" />
     <Compile Include="VIewModel\Base\RelayCommand.cs" />
     <Compile Include="VIewModel\WindowViewModel.cs" />
