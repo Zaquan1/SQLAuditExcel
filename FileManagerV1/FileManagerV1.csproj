@@ -64,9 +64,6 @@
     <Compile Include="Controls\SideMenuControl.xaml.cs">
       <DependentUpon>SideMenuControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Directory\Data\DirectoryItem.cs" />
-    <Compile Include="Directory\DirectoryItemType.cs" />
-    <Compile Include="Directory\DirectoryStructure.cs" />
     <Compile Include="VIewModel\Base\BaseViewModel.cs" />
     <Compile Include="VIewModel\Base\RelayCommand.cs" />
     <Compile Include="VIewModel\WindowViewModel.cs" />
