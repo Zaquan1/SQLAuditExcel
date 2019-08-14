@@ -115,7 +115,7 @@ namespace FileManagerV1
         /// </summary>
         /// <param name="path"></param>
         /// <returns></returns>
-        public static string GetFileFolderName(string path)
+        public static string GetFileFolderName(string path) 
         {
             if (string.IsNullOrEmpty(path))
                 return string.Empty;
