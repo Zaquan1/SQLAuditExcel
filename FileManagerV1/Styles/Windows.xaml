@@ -14,7 +14,7 @@
                             <!--Opacity mask for corners on grid-->
                             <Border x:Name="Container"
                                         Background="{StaticResource BackgroundMainBursh}" 
-                                        CornerRadius="{Binding WindowCornerRadius}"/>
+                                        CornerRadius="{Binding WindowCornerRadius}"/> 
 
                             <!--Window border and dropshadow-->
                             <Border CornerRadius="{Binding WindowCornerRadius}"
